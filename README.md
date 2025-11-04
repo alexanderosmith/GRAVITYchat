@@ -2,7 +2,7 @@
 
 A RAG (Retrieval-Augmented Generation) chatbot for LIGO/Gravity Spy citizen scientists, built with Azure services and privacy-first design.
 
-## 🌟 What It Does
+## What It Does
 
 GRAVITYchat helps citizen scientists get accurate, cited answers about:
 - **LIGO Technology**: Gravitational wave detectors, interferometry, sensitivity
@@ -10,7 +10,7 @@ GRAVITYchat helps citizen scientists get accurate, cited answers about:
 - **aLOGs**: LIGO Online Glitch Database, detector characterization
 - **Scientific Results**: Gravitational wave detections, astrophysics
 
-## 🏗️ Architecture
+## Architecture
 
 ```
 ┌─────────────────┐    ┌──────────────────┐    ┌─────────────────┐
@@ -117,7 +117,7 @@ GRAVITYchat/
 
 
 
-## 🔄 Data Flow
+## Data Flow
 
 1. **Question**: Citizen scientist asks a question
 2. **Retrieval**: System searches Azure AI Search for relevant documents
