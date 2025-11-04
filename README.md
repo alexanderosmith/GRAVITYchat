@@ -1,4 +1,4 @@
-# GRAVITYchat 🚀
+# GRAVITYchat 
 
 A RAG (Retrieval-Augmented Generation) chatbot for LIGO/Gravity Spy citizen scientists, built with Azure services and privacy-first design.
 
@@ -26,7 +26,7 @@ GRAVITYchat helps citizen scientists get accurate, cited answers about:
                        └──────────────────┘
 ```
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### Prerequisites
 - Python 3.12+
@@ -64,7 +64,7 @@ curl -X POST "http://localhost:8000/ask" \
      }'
 ```
 
-## 🔧 Configuration
+##  Configuration
 
 ### Environment Variables
 
@@ -86,7 +86,7 @@ ZOTERO_API_KEY=your-zotero-key
 ZOTERO_GROUP_ID=your-group-id
 ```
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 GRAVITYchat/
@@ -107,7 +107,7 @@ GRAVITYchat/
 └── run_demo.py           # Demo startup script
 ```
 
-## 🔒 Privacy & Security
+##  Privacy & Security
 
 - **No data logging**: Azure OpenAI configured with data logging disabled
 - **Minimal retention**: Session data retained for max 7 days
@@ -115,41 +115,7 @@ GRAVITYchat/
 - **RBAC**: Role-based access control for all components
 - **Key Vault**: Secure credential management
 
-## 🧪 Testing
 
-```bash
-# Run tests
-pytest tests/
-
-# Run with coverage
-pytest --cov=app tests/
-
-# Run specific test
-pytest tests/test_basic.py::test_document_retrieval -v
-```
-
-## 🐳 Docker Deployment
-
-```bash
-# Build image
-docker build -t gravitychat .
-
-# Run container
-docker run -p 8000:8000 gravitychat
-
-# With environment file
-docker run -p 8000:8000 --env-file .env gravitychat
-```
-
-## 📊 API Endpoints
-
-| Endpoint | Method | Description |
-|----------|--------|-------------|
-| `/` | GET | Root health check |
-| `/healthz` | GET | Detailed health status |
-| `/ask` | POST | Main RAG question endpoint |
-| `/index/status` | GET | Document index statistics |
-| `/docs` | GET | Interactive API documentation |
 
 ## 🔄 Data Flow
 
@@ -159,44 +125,7 @@ docker run -p 8000:8000 --env-file .env gravitychat
 4. **Generation**: Azure OpenAI generates answer using context
 5. **Response**: Answer returned with citations and confidence score
 
-## 🎯 Features
 
-- ✅ **RAG Architecture**: Retrieval-augmented generation with citations
-- ✅ **Azure Integration**: OpenAI, AI Search, Blob Storage
-- ✅ **Privacy-First**: No data logging, minimal retention
-- ✅ **Mock Mode**: Runs without Azure services for development
-- ✅ **FastAPI**: Modern async Python web framework
-- ✅ **Docker Ready**: Containerized deployment
-- ✅ **Testing**: Comprehensive test suite
-- ✅ **Documentation**: Interactive API docs
-
-## 🚧 Roadmap
-
-- [ ] Vector embeddings for semantic search
-- [ ] PDF processing pipeline
-- [ ] Zotero automated sync
-- [ ] Acronym expansion (LIGO glossary)
-- [ ] A/B testing for prompts
-- [ ] Performance monitoring
-- [ ] CI/CD pipeline
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Add tests
-5. Submit a pull request
-
-## 📄 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## 👥 Authors
-
-- **Alexander O. Smith** - *Initial work* - [aosmith@syr.edu](mailto:aosmith@syr.edu)
-
-## 🙏 Acknowledgments
 
 - LIGO Scientific Collaboration
 - Gravity Spy Team
